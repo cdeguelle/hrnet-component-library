@@ -3,7 +3,7 @@ import DatePicker from "../lib/components/DatePicker"
 import Modal from "../lib/components/Modal"
 import { StateSelectMenu } from "../lib/components/SelectMenu"
 import { DepartmentSelectMenu } from "../lib/components/SelectMenu"
-import { states } from "../data"
+import { employees, states } from "../data"
 import { departments } from "../data"
 import DataTable from "../lib/components/DataTable"
 
@@ -16,7 +16,7 @@ const App = () => {
     console.log(department)
 
     return (
-        <div style={{ width: 640, margin: "15px auto" }}>
+        <div>
             <h1>HRnet components</h1>
 
             <h2>Date of birth picker</h2>
@@ -29,17 +29,14 @@ const App = () => {
             <button onClick={() => setButtonActivated(true)}>Open the modal</button>
             {buttonActivated ? (
                 <Modal onClickFunction={() => setButtonActivated(false)} contentMessage={'Employee created'} />
-            ) : (
-                <div></div>
-            )}            
+            ) : null}            
 
             <h2>Select menu</h2>
             <StateSelectMenu options={states} onChangeFunction={setState} label={'State'} labelFor={'state'} />
             <DepartmentSelectMenu options={departments} onChangeFunction={setDepartment} label={'Department'} labelFor={'department'} />
 
             <h2>Data Table</h2>
-            <DataTable />
-            
+            <DataTable data={employees} />
         </div>
     )
 }

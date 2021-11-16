@@ -238,3 +238,226 @@ export const states = [
 ]
 
 export const departments = ['Sales', 'Marketing', 'Engineering', 'Human Resources', 'Legal']
+
+export const employees = [
+    {
+        firstName: 'Clément',
+        lastName: 'Deguelle',
+        dateOfBirth: '22/01/1994',
+        startDate: '16/11/2021',
+        street: '3 rue léonce castelbou',
+        city: 'Toulouse',
+        state: 'France',
+        zipCode: '31000',
+        department: 'Enginnering'
+    },
+    {
+        firstName: 'Clément',
+        lastName: 'Deguelle',
+        dateOfBirth: '22/01/1994',
+        startDate: '16/11/2021',
+        street: '3 rue léonce castelbou',
+        city: 'Toulouse',
+        state: 'France',
+        zipCode: '31000',
+        department: 'Enginnering'
+    },
+    {
+        firstName: 'Clément',
+        lastName: 'Deguelle',
+        dateOfBirth: '22/01/1994',
+        startDate: '16/11/2021',
+        street: '3 rue léonce castelbou',
+        city: 'Toulouse',
+        state: 'France',
+        zipCode: '31000',
+        department: 'Enginnering'
+    },
+    {
+        firstName: 'Clément',
+        lastName: 'Deguelle',
+        dateOfBirth: '22/01/1994',
+        startDate: '16/11/2021',
+        street: '3 rue léonce castelbou',
+        city: 'Toulouse',
+        state: 'France',
+        zipCode: '31000',
+        department: 'Enginnering'
+    },
+    {
+        firstName: 'Clément',
+        lastName: 'Deguelle',
+        dateOfBirth: '22/01/1994',
+        startDate: '16/11/2021',
+        street: '3 rue léonce castelbou',
+        city: 'Toulouse',
+        state: 'France',
+        zipCode: '31000',
+        department: 'Enginnering'
+    },
+    {
+        firstName: 'Clément',
+        lastName: 'Deguelle',
+        dateOfBirth: '22/01/1994',
+        startDate: '16/11/2021',
+        street: '3 rue léonce castelbou',
+        city: 'Toulouse',
+        state: 'France',
+        zipCode: '31000',
+        department: 'Enginnering'
+    },
+    {
+        firstName: 'Clément',
+        lastName: 'Deguelle',
+        dateOfBirth: '22/01/1994',
+        startDate: '16/11/2021',
+        street: '3 rue léonce castelbou',
+        city: 'Toulouse',
+        state: 'France',
+        zipCode: '31000',
+        department: 'Enginnering'
+    },
+    {
+        firstName: 'Clément',
+        lastName: 'Deguelle',
+        dateOfBirth: '22/01/1994',
+        startDate: '16/11/2021',
+        street: '3 rue léonce castelbou',
+        city: 'Toulouse',
+        state: 'France',
+        zipCode: '31000',
+        department: 'Enginnering'
+    },
+    {
+        firstName: 'Clément',
+        lastName: 'Deguelle',
+        dateOfBirth: '22/01/1994',
+        startDate: '16/11/2021',
+        street: '3 rue léonce castelbou',
+        city: 'Toulouse',
+        state: 'France',
+        zipCode: '31000',
+        department: 'Enginnering'
+    },
+    {
+        firstName: 'Clément',
+        lastName: 'Deguelle',
+        dateOfBirth: '22/01/1994',
+        startDate: '16/11/2021',
+        street: '3 rue léonce castelbou',
+        city: 'Toulouse',
+        state: 'France',
+        zipCode: '31000',
+        department: 'Enginnering'
+    },
+    {
+        firstName: 'Clément',
+        lastName: 'Deguelle',
+        dateOfBirth: '22/01/1994',
+        startDate: '16/11/2021',
+        street: '3 rue léonce castelbou',
+        city: 'Toulouse',
+        state: 'France',
+        zipCode: '31000',
+        department: 'Enginnering'
+    },
+    {
+        firstName: 'Clément',
+        lastName: 'Deguelle',
+        dateOfBirth: '22/01/1994',
+        startDate: '16/11/2021',
+        street: '3 rue léonce castelbou',
+        city: 'Toulouse',
+        state: 'France',
+        zipCode: '31000',
+        department: 'Enginnering'
+    },
+    {
+        firstName: 'Clément',
+        lastName: 'Deguelle',
+        dateOfBirth: '22/01/1994',
+        startDate: '16/11/2021',
+        street: '3 rue léonce castelbou',
+        city: 'Toulouse',
+        state: 'France',
+        zipCode: '31000',
+        department: 'Enginnering'
+    },
+    {
+        firstName: 'Clément',
+        lastName: 'Deguelle',
+        dateOfBirth: '22/01/1994',
+        startDate: '16/11/2021',
+        street: '3 rue léonce castelbou',
+        city: 'Toulouse',
+        state: 'France',
+        zipCode: '31000',
+        department: 'Enginnering'
+    },
+    {
+        firstName: 'Clément',
+        lastName: 'Deguelle',
+        dateOfBirth: '22/01/1994',
+        startDate: '16/11/2021',
+        street: '3 rue léonce castelbou',
+        city: 'Toulouse',
+        state: 'France',
+        zipCode: '31000',
+        department: 'Enginnering'
+    },
+    {
+        firstName: 'Clément',
+        lastName: 'Deguelle',
+        dateOfBirth: '22/01/1994',
+        startDate: '16/11/2021',
+        street: '3 rue léonce castelbou',
+        city: 'Toulouse',
+        state: 'France',
+        zipCode: '31000',
+        department: 'Enginnering'
+    },
+    {
+        firstName: 'Clément',
+        lastName: 'Deguelle',
+        dateOfBirth: '22/01/1994',
+        startDate: '16/11/2021',
+        street: '3 rue léonce castelbou',
+        city: 'Toulouse',
+        state: 'France',
+        zipCode: '31000',
+        department: 'Enginnering'
+    },
+    {
+        firstName: 'Clément',
+        lastName: 'Deguelle',
+        dateOfBirth: '22/01/1994',
+        startDate: '16/11/2021',
+        street: '3 rue léonce castelbou',
+        city: 'Toulouse',
+        state: 'France',
+        zipCode: '31000',
+        department: 'Enginnering'
+    },
+    {
+        firstName: 'Clément',
+        lastName: 'Deguelle',
+        dateOfBirth: '22/01/1994',
+        startDate: '16/11/2021',
+        street: '3 rue léonce castelbou',
+        city: 'Toulouse',
+        state: 'France',
+        zipCode: '31000',
+        department: 'Enginnering'
+    },
+    {
+        firstName: 'Clément',
+        lastName: 'Deguelle',
+        dateOfBirth: '22/01/1994',
+        startDate: '16/11/2021',
+        street: '3 rue léonce castelbou',
+        city: 'Toulouse',
+        state: 'France',
+        zipCode: '31000',
+        department: 'Enginnering'
+    }
+]

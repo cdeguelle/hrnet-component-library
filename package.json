@@ -1,9 +1,12 @@
 {
   "name": "hrnet-component-library",
-  "version": "0.1.0",
+  "version": "1.1.0",
   "main": "dist/index.js",
   "module": "dist/index.js",
-  "files": [ "dist", "README.md" ],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/cdeguelle/hrnet-component-library"

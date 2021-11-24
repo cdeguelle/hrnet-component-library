@@ -6,6 +6,7 @@ import { DepartmentSelectMenu } from "../lib/components/SelectMenu"
 import { employees, states } from "../data"
 import { departments } from "../data"
 import DataTable from "../lib/components/DataTable"
+import close from "../assets/close.png"
 
 const App = () => {
     const [buttonActivated, setButtonActivated] = useState(false)
@@ -32,7 +33,7 @@ const App = () => {
             <h2>Modal</h2>
             <button onClick={() => setButtonActivated(true)}>Open the modal</button>
             {buttonActivated ? (
-                <Modal onClickFunction={() => setButtonActivated(false)} contentMessage={'Employee created'} />
+                <Modal onClickFunction={() => setButtonActivated(false)} contentMessage={'Employee created'} closeIcon={close} />
             ) : null}            
 
             <h2>Select menu</h2>

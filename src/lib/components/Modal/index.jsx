@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import close from '../../../assets/close.png'
 
 const Confirmation = styled.div`
     text-align: left;
@@ -52,12 +51,12 @@ const ConfirmationClose = styled.img`
     cursor: pointer;
 `
 
-export default function Modal({onClickFunction, contentMessage}) {
+export default function Modal({onClickFunction, contentMessage, closeIcon}) {
     return (
         <Blocker>
             <Confirmation>
                 {contentMessage}
-                <ConfirmationClose src={close} onClick={() => onClickFunction()}></ConfirmationClose>
+                <ConfirmationClose src={closeIcon} onClick={() => onClickFunction()}></ConfirmationClose>
             </Confirmation>
         </Blocker>
     )

@@ -9,21 +9,25 @@ import DataTable from "../lib/components/DataTable"
 
 const App = () => {
     const [buttonActivated, setButtonActivated] = useState(false)
+    const [dateOfBirth, setDateOfBirth] = useState('')
+    const [startDate, setStartDate] = useState('')
     const [state, setState] = useState('AL')
     const [department, setDepartment] = useState('Sales')
 
     console.log(state)
     console.log(department)
+    console.log(dateOfBirth)
+    console.log(startDate)
 
     return (
         <div>
             <h1>HRnet components</h1>
 
             <h2>Date of birth picker</h2>
-            <DatePicker label={'Date of birth'} />
+            <DatePicker label={'Date of birth'} setDate={setDateOfBirth} />
 
             <h2>Start date picker</h2>
-            <DatePicker label={'Start date'} />
+            <DatePicker label={'Start date'} setDate={setStartDate} />
 
             <h2>Modal</h2>
             <button onClick={() => setButtonActivated(true)}>Open the modal</button>

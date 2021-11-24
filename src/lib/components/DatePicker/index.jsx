@@ -2,7 +2,7 @@ import * as React from 'react'
 import TextField from '@mui/material/TextField'
 import Stack from '@mui/material/Stack'
 
-export default function DateOfBirthPicker({label}) {
+export default function DateOfBirthPicker({label, setDate}) {
     return (
         <Stack component="form" noValidate spacing={3}>
             <TextField
@@ -14,6 +14,7 @@ export default function DateOfBirthPicker({label}) {
                 InputLabelProps={{
                     shrink: true,
                 }}
+                onChange={(e) => setDate(e.target.value)}
             />
         </Stack>
     )

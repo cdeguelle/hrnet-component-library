@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import * as React from 'react';
 const Label = styled.label`
     display: block;
     margin-top: 1rem;
@@ -12,13 +13,17 @@ export function StateSelectMenu({
   options,
   onChangeFunction,
   label,
-  labelFor
+  labelFor,
+  labelStyle,
+  selectStyle
 }) {
   return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(Label, {
-    htmlFor: labelFor
+    htmlFor: labelFor,
+    style: labelStyle
   }, label), /*#__PURE__*/React.createElement(Select, {
     name: "state",
-    onChange: e => onChangeFunction(e.target.value)
+    onChange: e => onChangeFunction(e.target.value),
+    style: selectStyle
   }, options.map(option => /*#__PURE__*/React.createElement("option", {
     value: option.abbreviation,
     key: option.abbreviation
@@ -28,13 +33,17 @@ export function DepartmentSelectMenu({
   options,
   onChangeFunction,
   label,
-  labelFor
+  labelFor,
+  labelStyle,
+  selectStyle
 }) {
   return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(Label, {
-    htmlFor: labelFor
+    htmlFor: labelFor,
+    style: labelStyle
   }, label), /*#__PURE__*/React.createElement(Select, {
     name: "state",
-    onChange: e => onChangeFunction(e.target.value)
+    onChange: e => onChangeFunction(e.target.value),
+    style: selectStyle
   }, options.map(option => /*#__PURE__*/React.createElement("option", {
     value: option,
     key: option

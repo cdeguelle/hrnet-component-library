@@ -9,7 +9,10 @@ import TablePagination from '@mui/material/TablePagination';
 import TableRow from '@mui/material/TableRow';
 import { useState } from 'react';
 export default function StickyHeadTable({
-  data
+  data,
+  paperStyle,
+  tableStyle,
+  rowsPerPageOptions
 }) {
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(10);
@@ -73,14 +76,9 @@ export default function StickyHeadTable({
   }
 
   return /*#__PURE__*/React.createElement(Paper, {
-    sx: {
-      width: '100%',
-      overflow: 'hidden'
-    }
+    sx: paperStyle
   }, /*#__PURE__*/React.createElement(TableContainer, {
-    sx: {
-      maxHeight: 440
-    }
+    sx: tableStyle
   }, /*#__PURE__*/React.createElement(Table, {
     stickyHeader: true,
     "aria-label": "sticky table"
@@ -103,7 +101,7 @@ export default function StickyHeadTable({
       }, value);
     }));
   })))), /*#__PURE__*/React.createElement(TablePagination, {
-    rowsPerPageOptions: [10, 25, 100],
+    rowsPerPageOptions: rowsPerPageOptions,
     component: "div",
     count: rows.length,
     rowsPerPage: rowsPerPage,

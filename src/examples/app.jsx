@@ -25,10 +25,10 @@ const App = () => {
             <h1>HRnet components</h1>
 
             <h2>Date of birth picker</h2>
-            <DatePicker label={'Date of birth'} setDate={setDateOfBirth} />
+            <DatePicker label={'Date of birth'} setDate={setDateOfBirth} width={220} />
 
             <h2>Start date picker</h2>
-            <DatePicker label={'Start date'} setDate={setStartDate} />
+            <DatePicker label={'Start date'} setDate={setStartDate} width={220} />
 
             <h2>Modal</h2>
             <button onClick={() => setButtonActivated(true)}>Open the modal</button>
@@ -41,7 +41,7 @@ const App = () => {
             <DepartmentSelectMenu options={departments} onChangeFunction={setDepartment} label={'Department'} labelFor={'department'} />
 
             <h2>Data Table</h2>
-            <DataTable data={employees} />
+            <DataTable data={employees} paperStyle={{ width: '100%', overflow: 'hidden' }} tableStyle={{ maxHeight: 440 }} rowsPerPageOptions={[10, 25, 100]} />
         </div>
     )
 }

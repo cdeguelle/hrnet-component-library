@@ -9,7 +9,7 @@ import TablePagination from '@mui/material/TablePagination'
 import TableRow from '@mui/material/TableRow'
 import { useState } from 'react'
 
-export default function StickyHeadTable({data}) {
+export default function StickyHeadTable({data, paperStyle, tableStyle, rowsPerPageOptions}) {
     const [page, setPage] = useState(0)
     const [rowsPerPage, setRowsPerPage] = useState(10)
 
@@ -46,8 +46,8 @@ export default function StickyHeadTable({data}) {
     }
 
     return (
-        <Paper sx={{ width: '100%', overflow: 'hidden' }}>
-            <TableContainer sx={{ maxHeight: 440 }}>
+        <Paper sx={paperStyle}>
+            <TableContainer sx={tableStyle}>
                 <Table stickyHeader aria-label="sticky table">
                     <TableHead>
                         <TableRow>
@@ -93,7 +93,7 @@ export default function StickyHeadTable({data}) {
                 </Table>
             </TableContainer>
             <TablePagination
-                rowsPerPageOptions={[10, 25, 100]}
+                rowsPerPageOptions={rowsPerPageOptions}
                 component="div"
                 count={rows.length}
                 rowsPerPage={rowsPerPage}

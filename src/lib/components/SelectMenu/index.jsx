@@ -11,11 +11,11 @@ const Select = styled.select`
     height: 25px;
 `
 
-export function StateSelectMenu({options, onChangeFunction, label, labelFor}) {
+export function StateSelectMenu({options, onChangeFunction, label, labelFor, labelStyle, selectStyle}) {
     return (
         <div>
-            <Label htmlFor={labelFor}>{label}</Label>
-            <Select name="state" onChange={(e) => onChangeFunction(e.target.value)}>
+            <Label htmlFor={labelFor} style={labelStyle}>{label}</Label>
+            <Select name="state" onChange={(e) => onChangeFunction(e.target.value)} style={selectStyle}>
                 {options.map((option) => (
                     <option value={option.abbreviation} key={option.abbreviation}>{option.name}</option>
                 ))}
@@ -24,11 +24,11 @@ export function StateSelectMenu({options, onChangeFunction, label, labelFor}) {
     )
 }
 
-export function DepartmentSelectMenu({options, onChangeFunction, label, labelFor}) {
+export function DepartmentSelectMenu({options, onChangeFunction, label, labelFor, labelStyle, selectStyle}) {
     return (
         <div>
-            <Label htmlFor={labelFor}>{label}</Label>
-            <Select name="state" onChange={(e) => onChangeFunction(e.target.value)}>
+            <Label htmlFor={labelFor} style={labelStyle}>{label}</Label>
+            <Select name="department" onChange={(e) => onChangeFunction(e.target.value)} style={selectStyle}>
                 {options.map((option) => (
                     <option value={option} key={option}>{option}</option>
                 ))}

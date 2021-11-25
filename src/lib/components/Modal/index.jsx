@@ -51,10 +51,10 @@ const ConfirmationClose = styled.img`
     cursor: pointer;
 `
 
-export default function Modal({onClickFunction, contentMessage, closeIcon}) {
+export default function Modal({onClickFunction, contentMessage, closeIcon, style}) {
     return (
         <Blocker>
-            <Confirmation>
+            <Confirmation style={style}>
                 {contentMessage}
                 <ConfirmationClose src={closeIcon} onClick={() => onClickFunction()}></ConfirmationClose>
             </Confirmation>

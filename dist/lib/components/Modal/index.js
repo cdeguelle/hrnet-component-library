@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import close from '../../../assets/close.png';
 const Confirmation = styled.div`
     text-align: left;
     vertical-align: middle;
@@ -50,10 +49,11 @@ const ConfirmationClose = styled.img`
 `;
 export default function Modal({
   onClickFunction,
-  contentMessage
+  contentMessage,
+  closeIcon
 }) {
   return /*#__PURE__*/React.createElement(Blocker, null, /*#__PURE__*/React.createElement(Confirmation, null, contentMessage, /*#__PURE__*/React.createElement(ConfirmationClose, {
-    src: close,
+    src: closeIcon,
     onClick: () => onClickFunction()
   })));
 }

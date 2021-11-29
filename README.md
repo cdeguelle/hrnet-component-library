@@ -40,6 +40,7 @@ A component for create a date picker.
  2. `setDate` the function will be change the value of the date picker
  3. `style` style for the date picker
  4. `width` the width of the date picker
+ 5. `id` name id of the date picker
 
 #### Use
 

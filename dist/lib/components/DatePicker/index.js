@@ -5,7 +5,8 @@ export default function DateOfBirthPicker({
   label,
   setDate,
   style,
-  width
+  width,
+  id
 }) {
   return /*#__PURE__*/React.createElement(Stack, {
     component: "form",
@@ -13,7 +14,7 @@ export default function DateOfBirthPicker({
     spacing: 3,
     style: style
   }, /*#__PURE__*/React.createElement(TextField, {
-    id: "date",
+    id: id,
     label: label,
     type: "date",
     defaultValue: "2017-05-24",

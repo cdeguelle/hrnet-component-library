@@ -2,11 +2,11 @@ import * as React from 'react'
 import TextField from '@mui/material/TextField'
 import Stack from '@mui/material/Stack'
 
-export default function DateOfBirthPicker({label, setDate, style, width}) {
+export default function DateOfBirthPicker({label, setDate, style, width, id}) {
     return (
         <Stack component="form" noValidate spacing={3} style={style}>
             <TextField
-                id="date"
+                id={id}
                 label={label}
                 type="date"
                 defaultValue="2017-05-24"

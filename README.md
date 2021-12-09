@@ -1,14 +1,14 @@
 # hrnet-components-library
 
 A library of React components created using `create-react-app`.
-
+Link to npm package : https://www.npmjs.com/package/hrnet-components-library
   
 
 ## Installation
 
 Run the following command:
 
-`npm install hrnet-component-library`.
+`npm install hrnet-components-library`
 
 ## Components
 
